@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Martian+Mono");
+
+:root { 
+    --primary: #181d27;
+	--Business: #d0db97;
+	--Personal: var(--primary);
+    --heading: #254D32;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+	--Business-glow: 0px 0px 4px rgba(208, 219, 151, 0.75);
+	--Personal-glow: 0px 0px 4px rgba(24, 29, 39, 0.75);
+}
+
+body {
+    
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #494a4b;
+    font-family: "Martian Mono";
+    text-align: center;
+    font-size: 130%;
+    background-image: url("Picture.PNG");
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+
+  @media only screen and (min-width: 500px) {
+    body {
+      min-height: 100vh;
+    }
+  }
+
+  section {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+h3 {
+	color: var(--primary);
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+h4 {
+
+    color: var(--heading);
+    font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+
+}
+
+.greeting{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+}
+
+.greetingTitle{
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: rgb(105, 181, 120);
+  font-size: 1.5rem;
+}
+
+
+.content{
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .create input[type="text"] {
+	display: block;
+	width: 100%;
+	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
+	color: var(--dark);
+	background-color: #FFF;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1.5rem;
+}
+
+.create .options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.create .options label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #FFF;
+	padding: 1.5rem;
+	box-shadow: var(--shadow);
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+
+.action .button span {
+    background: #f1f5f8;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+  }
+  
+
+  .todoList {
+    text-align:center;
+  }
+  .todoList li {
+    position: relative;
+    padding: 0.5rem;
+  }
+
+  
