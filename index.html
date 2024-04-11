@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Izzyreesey's Todo List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css" />
+
+    </head>
+
+    <body>
+        <main class="application">
+
+                <section class="greeting"></section>
+                    <h2 class ="greetingTitle"> Yokoso, <input type="text" id="user" placeholder="Input Your Name"/>
+                    </h2>
+
+                <section class="create">
+                    <h3> What shall we do today?</h3>
+                    <form id="create-form">
+                        <input
+                        type="text"
+                        name="content"
+                        placeholder="e.g. code more!"/>
+
+                    <h4> For which one? </h4>
+                        <div class="options">
+                        <label>
+                            <input type="radio" 
+                            name="Category" 
+                            id="cat1" 
+                            value= "Personal">
+                            <span class="Personal"></span>
+                            <div>Personal</div>
+                        </label>     
+
+                        <label>      
+                            <input type="radio" 
+                            name="Category" 
+                            id="cat1" 
+                            value= "Biz">
+                            <span class="Business"></span>
+                            <div>Business</div>
+                        </label>
+
+                    </div>
+
+                    <input type="submit" value="Add to-do"/>
+                </form>
+                </section>
+
+		
+	
+                <section class="todoList">
+                    <h3>TODO LIST</h3>
+                    <div class="list" id="todoList"></div>
+                </section>
+		
+
+        </main>
+
+	<script src="main.js"></script>
+	
+</body>
+</html>
